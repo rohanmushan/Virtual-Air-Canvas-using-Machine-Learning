@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Overview](#overview)
+- [Demo](#demo)
 - [Key Features](#key-features)
 - [Technical Requirements](#technical-requirements)
 - [Installation Guide](#installation-guide)
@@ -17,6 +18,19 @@
 
 Air Canvas is an interactive computer vision application that enables users to draw in the air using hand gestures. By leveraging OpenCV for image processing and MediaPipe for precise hand tracking, this application creates a virtual canvas where your index finger becomes the brush, controlled entirely through natural hand movements.
 
+## Demo
+
+### Screenshots
+<div align="center">
+  <img src="assets/SS-1.png" alt="Air Canvas Screenshot 1" width="400"/>
+  <img src="assets/SS-2.png" alt="Air Canvas Screenshot 2" width="400"/>
+  <img src="assets/SS-3.png" alt="Air Canvas Screenshot 3" width="400"/>
+  <img src="assets/air_canvas_1747660542.png" alt="Air Canvas Drawing Example" width="400"/>
+</div>
+
+### Video Demo
+[Watch the Air Canvas in action](https://youtube.com/watch?v=your-video-id)
+
 ## Key Features
 
 - **Intuitive Drawing Interface**: Draw naturally using hand gestures captured by your webcam
@@ -25,15 +39,6 @@ Air Canvas is an interactive computer vision application that enables users to d
 - **Brush Size Adjustment**: Customize your drawing experience with adjustable brush sizes
 - **Canvas Management**: Clear your canvas or save your creations as PNG files
 - **Smooth Drawing Experience**: Optimized tracking algorithms for fluid and accurate drawing
-
-## Demo
-
-### Screenshots
-![Air Canvas Demo 1](air_canvas_1744481194.png)
-![Air Canvas Demo 2](air_canvas_1745570961.png)
-
-### Video Demo
-[Watch the Air Canvas in action](https://youtube.com/watch?v=your-video-id)
 
 ## Technical Requirements
 
@@ -130,6 +135,10 @@ Air-Canvas-using-ML/
 │   ├── AirCanvas.py       # Main application code
 │   └── color_palette.py   # Color picker implementation
 ├── assets/                # Directory for project assets
+│   ├── SS-1.png          # Screenshot 1
+│   ├── SS-2.png          # Screenshot 2
+│   ├── SS-3.png          # Screenshot 3
+│   └── air_canvas_*.png  # Drawing examples
 ├── requirements.txt       # Project dependencies
 ├── README.md              # Project documentation
 └── air_canvas_*.png       # Saved drawing examples
