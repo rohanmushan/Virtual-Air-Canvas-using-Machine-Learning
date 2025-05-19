@@ -1,6 +1,17 @@
 # Air Canvas: Interactive Drawing with Hand Gestures
 
-![Air Canvas Demo](air_canvas_1744481194.png)
+## Table of Contents
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Technical Requirements](#technical-requirements)
+- [Installation Guide](#installation-guide)
+- [Usage Instructions](#usage-instructions)
+- [How It Works](#how-it-works)
+- [Project Structure](#project-structure)
+- [Troubleshooting](#troubleshooting)
+- [Future Enhancements](#future-enhancements)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -15,14 +26,23 @@ Air Canvas is an interactive computer vision application that enables users to d
 - **Canvas Management**: Clear your canvas or save your creations as PNG files
 - **Smooth Drawing Experience**: Optimized tracking algorithms for fluid and accurate drawing
 
+## Demo
+
+### Screenshots
+![Air Canvas Demo 1](air_canvas_1744481194.png)
+![Air Canvas Demo 2](air_canvas_1745570961.png)
+
+### Video Demo
+[Watch the Air Canvas in action](https://youtube.com/watch?v=your-video-id)
+
 ## Technical Requirements
 
 - **Python**: 3.8 or higher
 - **Libraries**:
-  - OpenCV: For image processing and canvas management
-  - MediaPipe: For hand tracking and gesture recognition
-  - NumPy: For numerical operations
-  - tkinter: For the color picker interface
+  - [OpenCV](https://opencv.org/): For image processing and canvas management
+  - [MediaPipe](https://mediapipe.dev/): For hand tracking and gesture recognition
+  - [NumPy](https://numpy.org/): For numerical operations
+  - [tkinter](https://docs.python.org/3/library/tkinter.html): For the color picker interface
 - **Hardware**: Webcam with clear resolution
 
 ## Installation Guide
@@ -139,6 +159,6 @@ This project is released under the MIT License.
 
 ## Acknowledgments
 
-- The MediaPipe team for their exceptional hand tracking library
-- OpenCV community for their powerful computer vision tools
+- The [MediaPipe](https://mediapipe.dev/) team for their exceptional hand tracking library
+- [OpenCV](https://opencv.org/) community for their powerful computer vision tools
 - Contributors to this project for their valuable input and feedback 
