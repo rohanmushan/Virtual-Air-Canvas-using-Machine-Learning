@@ -82,7 +82,7 @@ pip install -r requirements.txt
 ### Starting the Application
 
 ```bash
-python code/AirCanvas.py
+python code/air_canvas.py
 ```
 
 ### Interface Controls
@@ -134,7 +134,7 @@ python code/AirCanvas.py
 ```
 Air-Canvas-using-ML/
 ├── code/
-│   ├── AirCanvas.py       # Main application code
+│   ├── air_canvas.py       # Main application code
 │   └── color_palette.py   # Color picker implementation
 ├── assets/                # Directory for project assets
 │   ├── SS-1.png          # Screenshot 1
