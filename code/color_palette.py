@@ -4,32 +4,33 @@ import numpy as np
 import cv2
 
 def show_color_picker(current_color):
-    """Open a color picker dialog and return the selected BGR color"""
+    """Opens a color picker window and returns the selected color in BGR format"""
     root = tk.Tk()
     root.withdraw()  # Hide the main window
     
-    # Convert BGR to RGB for colorchooser
+    # Convert colors from BGR to RGB (OpenCV to tkinter)
     rgb_color = (current_color[2], current_color[1], current_color[0])
     
-    # Open color chooser dialog
+    # Show the color picker dialog
     color_code = colorchooser.askcolor(
         title="Choose drawing color",
         initialcolor=rgb_color
     )
     
-    if color_code[0] is None:  # User cancelled
+    if color_code[0] is None:  # User clicked cancel
         return None
     
-    # Convert RGB to BGR for OpenCV
+    # Convert back to BGR for OpenCV
     selected_rgb = color_code[0]
     selected_bgr = (selected_rgb[2], selected_rgb[1], selected_rgb[0])
     return selected_bgr
 
 def create_color_palette_window():
-    """Alternative: Create a custom palette window with predefined colors"""
+    """Creates a simple color palette with basic colors"""
     root = tk.Tk()
     root.title("Color Palette")
     
+    # List of basic colors
     colors = [
         ("Red", (0, 0, 255)),
         ("Green", (0, 255, 0)),
@@ -48,8 +49,9 @@ def create_color_palette_window():
         selected_color = bgr_color
         root.destroy()
     
+    # Create buttons for each color
     for name, bgr in colors:
-        # Convert BGR to hex for tkinter
+        # Convert BGR to hex for tkinter buttons
         hex_color = '#%02x%02x%02x' % (bgr[2], bgr[1], bgr[0])
         btn = tk.Button(
             root,
